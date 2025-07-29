@@ -1,0 +1,191 @@
+Você é um agente de inteligência artificial especializado em dados bancários corporativos. Sua missão é identificar oportunidades de negócio, riscos e tendências para a área de Empresas e Negócios do Bradesco (MEI, PJ e Empresas), integrando dados internos dos clientes com dados externos como o Boletim de Empresas do IBGE.
+
+Ao receber a base interna, você deve:
+
+Analisar o perfil das empresas (porte, setor, faturamento, localização, produtos contratados, engajamento, retorno operacional, CLV).
+
+Identificar gaps de produtos, potenciais de upsell/cross-sell e risco de churn.
+
+Gerar insights preditivos e prescritivos com modelos de IA.
+
+Ao receber a base externa (IBGE ou MAPRA), você deve:
+
+Mapear regiões e setores em crescimento, potencial de bancarização e concentração de MEIs/PJs por CNAE.
+
+Identificar oportunidades de expansão, benchmarking e comparação com a base interna.
+
+Suas entregas devem incluir:
+
+Insights automatizados por segmento, região e setor.
+
+Modelos preditivos e classificatórios com explicabilidade (ex: SHAP).
+
+Recomendações acionáveis para a rede de agências ou CRM.
+
+
+
+
+
+Análise Integrada: Base Interna de Clientes de Empresas do Bradesco e Boletim Mapa de Empresas/IBGE
+1. Contexto e objetivos
+A área de Empresas e Negócios do Bradesco atende Microempreendedores Individuais (MEI), micro e pequenas empresas (PJ) e empresas de maior porte. O objetivo desta análise é integrar os dados internos dos clientes (carteira, produtos, transações e engajamento) com informações externas provenientes do Boletim do Mapa de Empresas (Ministério do Empreendedorismo) e da Demografia das Empresas e Estatísticas de Empreendedorismo (IBGE), para identificar oportunidades de negócio, riscos de churn e tendências que apoiem decisões da rede de agências e do CRM.
+
+2. Principais descobertas do Boletim do Mapa de Empresas (2º quadrimestre/2024)
+O boletim do 2º quadrimestre de 2024 mostra que o ambiente empreendedor continua em expansão, apesar de heterogeneidades regionais e setoriais:
+
+Crescimento de novas empresas: 1,46 milhão de empresas foram abertas entre maio e agosto de 2024; um aumento de 0,3 % em relação ao quadrimestre anterior e 5,3 % em relação ao 2º quadrimestre de 2023
+gov.br
+. Foram fechadas 830 525 empresas, queda de 3 % frente ao quadrimestre anterior
+gov.br
+, resultando em saldo positivo de 628 554 novas empresas e 21,1 milhões de empresas ativas
+gov.br
+. O Nordeste foi a região com maior crescimento (+3,3 %), enquanto a região Sul apresentou queda de 5,7 %
+gov.br
+.
+
+Domínio do MEI: Os microempreendedores individuais (MEIs) representam 55,4 % das empresas ativas e 74,2 % das aberturas de 2024
+gov.br
+. Foram criados 1,08 milhão de MEIs no quadrimestre, consolidando 11,7 milhões de MEIs ativos
+gov.br
+.
+
+Setores em evidência: O setor terciário (serviços e comércio) é predominante – 84,1 % das empresas ativas, com as atividades de prestação de serviços sozinhas respondendo por 52 %
+gov.br
+. As atividades econômicas com mais empresas abertas foram promoção de vendas, comércio varejista de vestuário, preparação de documentos/apoio administrativo, cabeleireiros/manicures e transporte rodoviário de carga
+gov.br
+. Quase todas essas atividades podem ser exercidas por MEIs, que respondem por 92,8 % das aberturas nestas categorias
+gov.br
+.
+
+Estados e regiões de destaque: Ceará (+9,3 %), Amazonas (+7,3 %) e Acre (+6,0 %) foram os estados com maior crescimento relativo de aberturas
+gov.br
+. Rio Grande do Sul teve queda de 10 %
+gov.br
+. O tempo médio de abertura de empresas caiu para 18 horas; o Rio Grande do Sul foi o mais ágil (5 horas)
+gov.br
+.
+
+Tipos societários: Entre as 1,46 milhão de aberturas, 97,3 % são micro ou pequenas empresas
+gov.br
+. Houve queda de 0,6 % nas aberturas de empresário individual (inclusive MEI) e aumento de 2,3 % nas sociedades limitadas
+gov.br
+.
+
+3. Principais informações da Demografia das Empresas (IBGE – dados de 2022)
+O estudo do IBGE traz um panorama mais estrutural das empresas empregadoras (aquelas com pelo menos um empregado) e permite identificar tendências de longo prazo:
+
+Empresas ativas e emprego: em 2022 havia 7,9 milhões de empresas ativas, das quais 2,65 milhões eram empregadoras
+static.poder360.com.br
+. Estas empresas empregavam 40,5 milhões de pessoas (36,5 milhões de assalariados) e pagaram R$ 1,4 trilhão em salários, com salário médio mensal de R$ 3 108,66
+static.poder360.com.br
+.
+
+Nascimentos de empresas empregadoras: Em 2022, houve 405,6 mil nascimentos de empresas empregadoras; 54,5 % eram empresas novas e 45,5 % reentrantes (empresas que passaram a contratar assalariados após mais de 24 meses sem empregados)
+static.poder360.com.br
+. Essas novas empresas contrataram 1,7 milhão de assalariados (4,6 % do total de empregos)
+static.poder360.com.br
+.
+
+Setores com maior participação: Comércio e reparação de veículos representaram 42,7 % das empresas empregadoras e 39,4 % dos nascimentos; a indústria de transformação representou 11,2 % das empresas ativas e 8,7 % dos nascimentos
+static.poder360.com.br
+. Construção, artes/cultura/esporte e “outras atividades de serviços” tiveram as maiores taxas de nascimento, acima de 19 %
+static.poder360.com.br
+. Na geração de empregos, destacaram‑se comércio, atividades administrativas, alojamento/alimentação e indústria de transformação
+static.poder360.com.br
+.
+
+Análise regional: 46,8 % das unidades locais empregadoras estavam no Sudeste; 21,6 % no Sul; 17,1 % no Nordeste; 9,7 % no Centro‑Oeste e 4,9 % no Norte
+static.poder360.com.br
+. O Sudeste, portanto, continua sendo o maior polo de empresas empregadoras, mas o Nordeste vem aumentando sua participação.
+
+4. Integração com a base interna do Bradesco
+A integração das informações externas com os dados internos permite comparar a carteira atual com o mercado e identificar gaps de produtos, oportunidades de expansão e risco de churn. A seguir estão propostas de análises e modelos preditivos.
+
+4.1 Segmentação e perfil da carteira interna
+Porte e faturamento – classificar clientes em MEI, Microempresa, Pequeno Porte, Médio Porte e Empresas de Grande Porte com base no faturamento e quantidade de empregados. Comparar a distribuição da carteira com a estrutura de mercado: se o banco tem participação menor em MEIs/pequenas empresas em regiões onde o Mapa de Empresas mostra forte crescimento (ex.: Nordeste e Norte), há oportunidade de aquisição.
+
+Setor/CNAE – mapear o CNAE principal de cada cliente e comparar com as seções econômicas do IBGE. Verificar se a carteira está concentrada em setores em crescimento (ex.: comércio varejista, serviços de apoio administrativo, logística, cabeleireiros/estética). Caso contrário, desenvolver ofertas dedicadas para setores em ascensão, como construção civil, atividades de transporte por aplicativo e serviços de ensino.
+
+Localização – cruzar o endereço das empresas com dados regionais do Boletim. Criar um índice de potencial de bancarização para cada município/região:
+
+Índice de crescimento de aberturas: estados como Ceará, Amazonas e Acre apresentaram crescimentos acima de 6 %
+gov.br
+.
+
+Salto de MEIs e microempresas: regiões com alta participação de MEIs (Nordeste e Norte) podem demandar produtos simplificados e microcrédito.
+
+Tempo de abertura: estados que agilizaram o processo (Rio Grande do Sul, Sergipe, Paraná) podem atrair empreendedores mais dinâmicos
+gov.br
+.
+
+Produtos contratados e engajamento – analisar quais produtos cada cliente possui (conta corrente, maquininha, folha de pagamento, seguros, consórcios, investimentos) e a frequência de uso (transações, acessos ao app). Calcular Customer Lifetime Value (CLV) e retorno operacional por cliente/segmento.
+
+4.2 Detecção de gaps de produtos e oportunidades de upsell/cross‑sell
+Com base no perfil identificado, é possível cruzar a carteira com o portfólio de produtos do banco e encontrar lacunas:
+
+Segmento/CNAE	Produtos com baixa penetração (gap)	Oportunidades de upsell/cross‑sell
+MEIs (Promoção de vendas, Cabe­leireiros, Serviços de apoio, Transporte de cargas, Comércio varejista)	Baixa adesão a maquininha e contas digitais; poucos contratam seguro ou capital de giro	Oferecer conta digital gratuita com acesso a Pix, maquininhas com taxas reduzidas e microcrédito; incluir seguros de responsabilidade civil e plano de saúde empresarial
+Setores de transporte/logística	Baixo uso de consórcio para compra/renovação de veículos e cartões corporate	Oferecer leasing/financiamento de veículos, cartões de combustível e soluções de frotas; integrar com BNDES e linhas verdes para caminhões elétricos
+Construção civil e Obras de alvenaria	Pouca oferta de garantia bancária e fundos de investimento	Oferecer seguro garantia, FIDC e financiamento de equipamentos; estimular gestão de folha e cartões benefícios
+Serviços de educação e cursos livres	Falta de maquininha e pagamentos recorrentes	Oferecer gateway de pagamentos para cobrança de mensalidades, antecipação de recebíveis e plataformas de e-learning
+Empresas empregadoras de médio porte (Indústria de transformação, Alojamento/alimentação)	Baixa oferta de serviços de câmbio e plano de previdência empresarial	Oferecer gestão de tesouraria, hedge cambial para importadoras/exportadoras e previdência corporativa
+
+Além disso, convém analisar padrões de uso de crédito, inadimplência e movimentações de caixa para personalizar propostas. Por exemplo, clientes com alto volume de Pix e faturamento irregular podem se beneficiar de antecipação de recebíveis ou linhas rotativas com taxas ajustadas ao risco.
+
+4.3 Modelos preditivos e de risco
+Modelo de propensão de compra – utilizar algoritmos supervisionados (árvores de decisão, XGBoost) para prever a probabilidade de cada cliente contratar um determinado produto (e.g., maquininha, seguro). Variáveis explicativas: segmento, CNAE, receita média, número de funcionários, histórico de transações, presença de produtos do portfólio, região, tempo de relacionamento. A interpretação com SHAP values ajuda a explicar quais características contribuem mais para a propensão (ex.: alto volume de vendas via Pix aumenta a chance de adquirir maquininha).
+
+Modelo de risco de churn – classificar clientes que têm alta probabilidade de encerrar a conta ou migrar para outro banco. Variáveis: queda no volume de transações, atraso nos pagamentos, reclamações, redução no uso do app, comparativo com o baseline do setor. A partir dos valores de SHAP é possível identificar fatores críticos (ex.: tempo de abertura de empresa no estado de origem, setor com altas taxas de fechamento – Rio Grande do Sul e Santa Catarina tiveram queda nas aberturas
+gov.br
+; comércio varejista com retração de 8 % nas aberturas
+gov.br
+).
+
+Modelo de CLV e segmentação de rentabilidade – estimar a receita futura líquida de cada cliente considerando spreads, tarifas e cross‑sell. Clientes com alto CLV e baixo risco devem ser priorizados em ofertas de fidelização; aqueles com baixo CLV e alto risco podem receber soluções automatizadas de baixo custo.
+
+Detecção de inadimplência/risco de crédito – integrar dados de faturamento, histórico de pagamento de empréstimos e informações setoriais. Setores com maior taxa de mortalidade de empresas (ex.: artes/cultura, outras atividades de serviços, com altas taxas de nascimento mas menor sobrevivência
+static.poder360.com.br
+) podem exigir critérios de crédito mais rigorosos.
+
+4.4 Integração regional e benchmarking
+Ao comparar a carteira do Bradesco com a distribuição regional das empresas ativas:
+
+Sudeste – concentra quase metade das empresas empregadoras
+static.poder360.com.br
+ e 71 % das aberturas no Boletim de 2024
+gov.br
+. O Bradesco, já forte na região, deve proteger o market share investindo em experiências digitais e parcerias com marketplaces. A competição é intensa, mas a região tem maior geração de renda e empresas empregadoras com ticket médio maior.
+
+Nordeste e Norte – apresentam os maiores crescimentos de abertura de empresas, impulsionados por MEIs
+gov.br
+. Muitas cidades ainda possuem baixa bancarização e pouca presença de agências. Estratégia recomendada: investir em agentes correspondentes, POS portáteis, campanhas educativas e parcerias com associações locais. A oferta de microcrédito e educação financeira é essencial.
+
+Centro‑Oeste – crescimento moderado, mas com forte presença do agronegócio e serviços relacionados. O banco pode oferecer produtos de fomento agrícola, seguros rurais e linhas de capital de giro para fornecedores da cadeia.
+
+Sul – apesar de possuir empresas maduras, registrou retração nas aberturas
+gov.br
+ e altas taxas de fechamento em alguns estados. Clientes existentes podem apresentar risco de churn, exigindo ações de retenção, como renegociação de dívidas e linhas de reestruturação.
+
+5. Recomendações prescritivas
+Campanhas segmentadas por CNAE e região: usar os dados de CNAE para criar campanhas específicas (ex.: campanha de maquininha para cabeleireiros e esteticistas no Nordeste; financiamento de veículos para transportadores no Sudeste). Priorizar estados com crescimento acima de 5 % no Boletim (Ceará, Amazonas, Acre e Rio de Janeiro)
+gov.br
+.
+
+Oferta de linhas de crédito diferenciadas: aproveitar o Pronampe e programas federais que ampliaram prazo e reduziram juros
+gov.br
+. Automatizar a análise de crédito e disponibilizar simulação via app para MEIs e microempresas.
+
+Expansão digital e redução de custos: com o tempo médio de abertura de empresa caindo para 18 horas
+gov.br
+, novos empreendedores esperam soluções rápidas. Integrar a abertura de conta PJ ao processo de inscrição de MEI (Gov.br) e ao portal Mapa de Empresas, facilitando a aquisição de clientes. Criar parcerias para oferecer conta bancária no momento do registro.
+
+Modelos preditivos com explicabilidade: implementar soluções de IA com SHAP ou LIME para justificar as previsões. Em relatórios gerenciais, destacar para cada cliente/segmento as principais variáveis que aumentam a probabilidade de comprar um produto ou de churn. Isso ajuda os gerentes a personalizar abordagens.
+
+Monitoramento contínuo de mercado: utilizar os boletins trimestrais do Mapa de Empresas e as publicações do IBGE para ajustar estratégias. Por exemplo, se o Boletim do 3º quadrimestre de 2024 mostrar queda de aberturas em determinado setor, reduzir a oferta de crédito nesse segmento.
+
+Benchmarking de rentabilidade: comparar a CLV média dos clientes do Bradesco com dados de empresas empregadoras (salário médio, número de empregados) para identificar gaps de receita. Empresas de alto crescimento (gazelas) tendem a empregar mais e pagar salários acima da média
+static.poder360.com.br
+; captar essas empresas gera maior retorno.
+
+6. Conclusão
+A integração de dados internos do Bradesco com informações externas do Mapa de Empresas e do IBGE permite uma visão abrangente do ecossistema empresarial brasileiro. Os dados mostram que o Brasil vive uma fase de expansão de micro e pequenas empresas, sobretudo MEIs, com forte dinamismo no Nordeste e Norte. O banco deve aproveitar esse crescimento com produtos simplificados, crédito orientado e soluções digitais, ao mesmo tempo em que monitora riscos em setores/estados com alta taxa de fechamento. Modelos de IA, aliados a métricas de explicabilidade, irão suportar decisões mais precisas e personalizadas, elevando a eficiência comercial e a satisfação dos clientes.
